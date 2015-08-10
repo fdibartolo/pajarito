@@ -13,4 +13,6 @@ gem 'bootstrap-sass', '3.3.5'
 gem 'autoprefixer-rails', '5.2.0.1'
 gem 'font-awesome-rails', '4.4.0.0'
 
+gem 'rails_12factor', '0.0.3', group: :production
+
 gem 'sdoc', '~> 0.4.0', group: :doc
