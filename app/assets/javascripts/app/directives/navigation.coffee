@@ -8,7 +8,7 @@ angular.module("gaviotas.directives").directive "pageScroll", ->
           $('html,body').animate { scrollTop: target.offset().top - 40 }, 900
     return
 
-angular.module("gaviotas.directives").directive "scrollMenuSpy", ($window) ->
+angular.module("gaviotas.directives").directive "scrollMenuSpy", ['$window', ($window) ->
   link: (scope, element, attr) ->
     angular.element($window).bind 'scroll', ->
       navHeight = $(window).height() - 100;
@@ -20,3 +20,4 @@ angular.module("gaviotas.directives").directive "scrollMenuSpy", ($window) ->
     $(element).scrollspy
       target: '.navbar-default'
       offset: 80
+]
