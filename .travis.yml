@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.2.1
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: gkvxdXpLmKevjNBpIAWK9OdVGW+PRBDkRjFPG1oEPb8nQdLUC8qqMFOPR50JXPyJod5KrvOSJ4hKMeqS0UN2rMMJfZZSvBRyOACqauiprA7SATqcx1ykC+RSK3jw+0PAE2pxRD/8+MZ6Cq/P3LIiOIo0C+iZbHkGHHvXxznPVSa+zeZ9V5oJLsru6tAJxMyjJamEX6WXO8gpDRWxXMDyg85bfm2JBUDSiUvZKhPZn3RXZY4R5g1GUUBfG9JAZHHpn09RQSyIYD6n8SucnWKLvNL0BCPJmze3pVSph+iHRyY3ICxJ6IxBjTXOSQschsIueqOFSpn20b/TDhRICwA/2vQ1jLnX2hWEvKJ47mo9+G7+puqnO53QUrCaI/3Sf3JESG/gABvkwZ9BH2JPqCURxOnS4ez/ywwlZx9dorm1KTSswav4Y85tkNKqFunsbu7NZ10qm13f95tb1fjurSwSd4YnLPXwOeyF5c3bXqA9KckYC84meAcDdeAU2HIZvVWLcr3WN6hatk5YIAEUsVtw9V6HT7Lw/EVJC7QuvVYyAWWISVn5qB2/+APZ6vCKffjJLkocyJ5VyuPMoxHqJemLmahano5EEFvTG/BrZKGxCptpvZHleuff2QpgEBxN/Kb5p4AqOgbGs+pePAXlh+JA6npe0x1ICkgmyJSqDkzR4L8=
+  app:
+    master: gaviotas
