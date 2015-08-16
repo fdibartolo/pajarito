@@ -1,4 +1,4 @@
-app = angular.module('gaviotas', ['ngRoute', 'gaviotas.controllers', 'gaviotas.services', 'gaviotas.directives'])
+app = angular.module('gaviotas', ['ngRoute', 'pascalprecht.translate', 'gaviotas.controllers', 'gaviotas.services', 'gaviotas.directives'])
 
 controllers = angular.module('gaviotas.controllers', [])
 services = angular.module('gaviotas.services', [])
@@ -12,4 +12,15 @@ app.config ['$httpProvider', '$routeProvider', ($httpProvider, $routeProvider) -
     templateUrl: '/templates/index.html'
 
   $routeProvider.otherwise redirectTo: '/'
+]
+
+app.config ['$translateProvider', ($translateProvider) ->
+  $translateProvider.useStaticFilesLoader
+    prefix: '/assets/app/languages/'
+    suffix: '.json'
+  $translateProvider.preferredLanguage 'en'
+  
+  # Enable escaping of HTML
+  $translateProvider.useSanitizeValueStrategy 'escaped'
+  return
 ]
