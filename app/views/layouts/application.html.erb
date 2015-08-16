@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="gaviotas">
+<html ng-app="gaviotas" ng-controller="MainController">
 <head>
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
@@ -45,6 +45,16 @@
           <li><a href="#tf-works" page-scroll>Portfolio</a></li>
           <li><a href="#tf-testimonials" page-scroll>Testimonials</a></li>
           <li><a href="#tf-contact" page-scroll>Contact</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-flag" style="font-size:130%"></i> <span>{{getLanguage()}}</span> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="language in languages">
+                <a ng-click="setLanguage(language.key)">{{language.name}}</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

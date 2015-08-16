@@ -18,7 +18,7 @@ app.config ['$translateProvider', ($translateProvider) ->
   $translateProvider.useStaticFilesLoader
     prefix: '/assets/app/languages/'
     suffix: '.json'
-  $translateProvider.preferredLanguage 'en'
+  $translateProvider.preferredLanguage 'es'
   
   # Enable escaping of HTML
   $translateProvider.useSanitizeValueStrategy 'escaped'

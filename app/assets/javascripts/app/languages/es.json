@@ -1,4 +1,5 @@
 {
-  "WELCOME" : "Bienvenido a <strong><span class='color'>Gaviotas</span></strong>",
+  "WELCOME_TITLE" : "Bienvenido a <strong><span class='color'>Gaviotas</span></strong>",
+  "WELCOME_DESCRIPTION" : "Un placentero lugar para disfrutar de la naturaleza",
   "ABOUT" : "Acerca de"
 }
