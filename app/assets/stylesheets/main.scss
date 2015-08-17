@@ -10,12 +10,14 @@
 .navbar-nav > li > .dropdown-menu {
   background-color: transparent;
   text-align: right;
+  border: 1px solid #5a5a5a;
+  border-radius: 4px;
 
   a {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 12px;
-    color: #fff;
+    color: #5a5a5a;
     letter-spacing: 1px;
 
     &:hover {

@@ -7,5 +7,15 @@
   "MENU_CONTACT" : "Contact",
   "WELCOME_TITLE" : "Welcome to <strong><span class='color'>Gaviotas</span></strong>",
   "WELCOME_DESCRIPTION" : "A pleasant place to enjoy nature",
+  "SERVICES_TITLE" : "Take a look at <strong>our services</strong>",
+  "SERVICES_SUMMARY" : "In English Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
+  "SERVICES_BED" : "Sheets & towels",
+  "SERVICES_BED_DESCRIPTION" : "Every 2 days, we replace you bed sheets and towels bla bla bla bla bla",
+  "SERVICES_BREAKFAST" : "Breakfast",
+  "SERVICES_BREAKFAST_DESCRIPTION" : "Enjoy a delicious breakfast every day of your stay, with toasts, croissants, and the best selection of local mermelades",
+  "SERVICES_TV" : "Cable TV",
+  "SERVICES_TV_DESCRIPTION" : "Flat TVs and the most range of channels right at your fingertip",
+  "SERVICES_WIFI" : "WiFi",
+  "SERVICES_WIFI_DESCRIPTION" : "Wireless internet connection for all the devices that you carry on",
   "ABOUT" : "About us"
 }
