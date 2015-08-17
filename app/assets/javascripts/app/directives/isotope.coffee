@@ -1,4 +1,4 @@
-angular.module("gaviotas.directives").directive "imageFilter", ($window) ->
+angular.module("gaviotas.directives").directive "imageFilter", () ->
   link: (scope, element, attr) ->
     $('.cat a').bind 'click', ->
       $('.cat .active').removeClass 'active'
