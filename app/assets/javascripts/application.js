@@ -15,5 +15,6 @@
 //= require bootstrap-sprockets
 //= require angular
 //= require angular-route
+//= require angular-sanitize
 //= require app/gaviotas
 //= require_tree .

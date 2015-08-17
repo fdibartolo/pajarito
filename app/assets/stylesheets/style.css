@@ -335,6 +335,7 @@ ol.type li a.active { font-weight: 700; }
 	height: 260px;
 	overflow: hidden;
 	position: relative;
+  cursor: pointer;
 }
 
 .hover-bg .hover-text {

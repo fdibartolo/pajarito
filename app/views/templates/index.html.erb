@@ -91,7 +91,7 @@
 <!-- Portfolio Section
 ==========================================-->
 <div id="tf-photos">
-  <div class="container"> <!-- Container -->
+  <div class="container">
     <div class="section-title text-center center">
       <h2 translate="PHOTOS_TITLE"></h2>
       <div class="line"><hr></div>
@@ -115,131 +115,17 @@
       <div class="clearfix"></div>
     </div>
 
-    <div id="lightbox" image-filter class="row">
-      <div class="col-sm-6 col-md-3 col-lg-3 interior">
+    <div class="row" image-filter>
+      <div ng-repeat="photo in photos" class="col-sm-6 col-md-3 col-lg-3" ng-class="photo.categories">
         <div class="portfolio-item">
           <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/01.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 exterior gaviotas">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/02.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 gaviotas">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/03.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 interior">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/04.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 interior">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/05.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 gaviotas">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/06.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 exterior gaviotas">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/07.jpg", alt: "...", class: "img-responsive" %>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3 interior">
-        <div class="portfolio-item">
-          <div class="hover-bg">
-            <a href="#">
-              <div class="hover-text">
-                <!-- <h4>Logo Design</h4> -->
-                <small>{{"PHOTOS_ZOOM" | translate}}</small>
-                <div class="clearfix"></div>
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <%= image_tag "portfolio/08.jpg", alt: "...", class: "img-responsive" %>
-            </a>
+            <div class="hover-text">
+              <!-- <h4>Logo Design</h4> -->
+              <small>{{"PHOTOS_ZOOM" | translate}}</small>
+              <div class="clearfix"></div>
+              <i class="fa fa-search-plus"></i>
+            </div>
+            <div ng-bind-html="photo.image_tag"></div>
           </div>
         </div>
       </div>
