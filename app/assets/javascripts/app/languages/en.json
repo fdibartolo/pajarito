@@ -17,5 +17,13 @@
   "SERVICES_TV_DESCRIPTION" : "Flat TVs and the most range of channels right at your fingertip",
   "SERVICES_WIFI" : "WiFi",
   "SERVICES_WIFI_DESCRIPTION" : "Wireless internet connection for all the devices that you carry on",
+  "PHOTOS_TITLE" : "Take a look at <strong>our photo gallery</strong>",
+  "PHOTOS_SUMMARY" : "In English Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
+  "PHOTOS_FILTER_TITLE" : "Filter by category:",
+  "PHOTOS_FILTER_ALL" : "All",
+  "PHOTOS_FILTER_INTERIOR" : "Interior",
+  "PHOTOS_FILTER_EXTERIOR" : "Exterior",
+  "PHOTOS_FILTER_GAVIOTAS" : "Las Gaviotas",
+  "PHOTOS_ZOOM" : "Zoom",
   "ABOUT" : "About us"
 }
