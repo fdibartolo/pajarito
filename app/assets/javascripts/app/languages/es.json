@@ -1,4 +1,10 @@
 {
+  "MENU_HOME" : "Inicio",
+  "MENU_SERVICES" : "Servicios",
+  "MENU_DIRECTIONS" : "Cómo llegar",
+  "MENU_PHOTOS" : "Fotos",
+  "MENU_TESTIMONIALS" : "Testimonios",
+  "MENU_CONTACT" : "Contacto",
   "WELCOME_TITLE" : "Bienvenido a <strong><span class='color'>Gaviotas</span></strong>",
   "WELCOME_DESCRIPTION" : "Un placentero lugar para disfrutar de la naturaleza",
   "ABOUT" : "Acerca de"

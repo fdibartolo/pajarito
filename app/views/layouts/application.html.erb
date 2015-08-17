@@ -38,16 +38,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#tf-home" page-scroll>Home</a></li>
-          <li><a href="#tf-about" page-scroll>About</a></li>
-          <li><a href="#tf-team" page-scroll>Team</a></li>
-          <li><a href="#tf-services" page-scroll>Services</a></li>
-          <li><a href="#tf-works" page-scroll>Portfolio</a></li>
-          <li><a href="#tf-testimonials" page-scroll>Testimonials</a></li>
-          <li><a href="#tf-contact" page-scroll>Contact</a></li>
+          <li><a href="#tf-home" page-scroll translate="MENU_HOME"></a></li>
+          <li><a href="#tf-services" page-scroll translate="MENU_SERVICES"></a></li>
+          <li><a href="#tf-about" page-scroll translate="MENU_DIRECTIONS"></a></li>
+          <li><a href="#tf-photos" page-scroll translate="MENU_PHOTOS"></a></li>
+          <li><a href="#tf-testimonials" page-scroll translate="MENU_TESTIMONIALS"></a></li>
+          <li><a href="#tf-contact" page-scroll translate="MENU_CONTACT"></a></li>
           <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-flag" style="font-size:130%"></i> <span>{{getLanguage()}}</span> <span class="caret"></span>
+              <i class="fa fa-flag-o" style="font-size:130%"></i> <span>{{getLanguage()}}</span> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li ng-repeat="language in languages">

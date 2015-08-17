@@ -1,4 +1,10 @@
 {
+  "MENU_HOME" : "Home",
+  "MENU_SERVICES" : "Services",
+  "MENU_DIRECTIONS" : "Get directions",
+  "MENU_PHOTOS" : "Photos",
+  "MENU_TESTIMONIALS" : "Testimonials",
+  "MENU_CONTACT" : "Contact",
   "WELCOME_TITLE" : "Welcome to <strong><span class='color'>Gaviotas</span></strong>",
   "WELCOME_DESCRIPTION" : "A pleasant place to enjoy nature",
   "ABOUT" : "About us"
