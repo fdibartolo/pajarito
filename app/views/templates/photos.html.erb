@@ -7,7 +7,7 @@
         </div>
         <div photos-carousel class="owl-carousel owl-theme">
           <div ng-repeat="photo in photos">
-            <div ng-bind-html="photo.image_tag"></div>
+            <div ng-if="photo.visible" ng-bind-html="photo.image_tag"></div>
           </div>
         </div>
       </div>

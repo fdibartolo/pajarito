@@ -105,10 +105,26 @@
         <li class="pull-left"><h4>{{"PHOTOS_FILTER_TITLE" | translate}}</h4></li>
         <li class="pull-right">
           <ol class="type">
-            <li><a href="#" data-filter="*" class="active">{{"PHOTOS_FILTER_ALL" | translate}}</a></li>
-            <li><a href="#" data-filter=".interior">{{"PHOTOS_FILTER_INTERIOR" | translate}}</a></li>
-            <li><a href="#" data-filter=".exterior">{{"PHOTOS_FILTER_EXTERIOR" | translate}}</a></li>
-            <li><a href="#" data-filter=".gaviotas" >{{"PHOTOS_FILTER_GAVIOTAS" | translate}}</a></li>
+            <li>
+              <a ng-click="setVisibility('*')" data-filter="*" class="clickable active">
+                {{"PHOTOS_FILTER_ALL" | translate}}
+              </a>
+            </li>
+            <li>
+              <a ng-click="setVisibility('interior')" data-filter=".interior" class="clickable">
+                {{"PHOTOS_FILTER_INTERIOR" | translate}}
+              </a>
+            </li>
+            <li>
+              <a ng-click="setVisibility('exterior')" data-filter=".exterior" class="clickable">
+                {{"PHOTOS_FILTER_EXTERIOR" | translate}}
+              </a>
+            </li>
+            <li>
+              <a ng-click="setVisibility('gaviotas')" data-filter=".gaviotas" class="clickable">
+                {{"PHOTOS_FILTER_GAVIOTAS" | translate}}
+              </a>
+            </li>
           </ol>
         </li>
       </ul>

@@ -1,3 +1,7 @@
+.clickable {
+  cursor: pointer;
+}
+
 // Navigation menu
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
@@ -50,9 +54,19 @@
     }
   }
 
+  i.fa {
+    border: none;
+    color: #fff !important;
+    &:hover { color: #fcac45 !important; }
+  }
+
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .owl-theme .owl-controls .owl-buttons div {
+    background: none !important;
   }
 }

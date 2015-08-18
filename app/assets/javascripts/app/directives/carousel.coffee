@@ -10,7 +10,11 @@ angular.module("gaviotas.directives").directive "photosCarousel", ->
   link: (scope, element, attr) ->
     scope.$watch 'photos', (newValue, oldValue) ->
       $(element).owlCarousel
-        navigation : false
+        pagination : false
+        navigation : true
+        rewindNav : false
+        navigationText : ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
         slideSpeed : 300
         paginationSpeed : 400
         singleItem : true
+
