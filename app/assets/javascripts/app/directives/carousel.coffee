@@ -18,3 +18,5 @@ angular.module("gaviotas.directives").directive "photosCarousel", ->
         paginationSpeed : 400
         singleItem : true
 
+    scope.$watch 'currentPhotoIndex', (newValue, oldValue) ->
+      $(element).trigger('owl.jumpTo', newValue)
