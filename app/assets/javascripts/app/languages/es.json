@@ -25,5 +25,15 @@
   "PHOTOS_FILTER_EXTERIOR" : "Exteriores",
   "PHOTOS_FILTER_GAVIOTAS" : "Las Gaviotas",
   "PHOTOS_ZOOM" : "Ampliar",
+  "TESTIMONIALS_TITLE" : "Testimonios de <strong>nuestros huéspedes</strong>",
+  "CONTACT_TITLE" : "Tenes consultas, <strong>contactanos</strong>",
+  "CONTACT_SUMMARY" : "En español Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
+  "CONTACT_NAME" : "Nombre",
+  "CONTACT_NAME_PLACEHOLDER" : "Ingresa tu nombre",
+  "CONTACT_EMAIL" : "Email",
+  "CONTACT_EMAIL_PLACEHOLDER" : "Enter tu dirección de email",
+  "CONTACT_MESSAGE" : "Mensaje",
+  "CONTACT_MESSAGE_PLACEHOLDER" : "Dejanos tu mensaje",
+  "CONTACT_SUBMIT" : "Enviar",
   "ABOUT" : "Acerca de"
 }
