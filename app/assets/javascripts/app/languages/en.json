@@ -17,6 +17,11 @@
   "SERVICES_TV_DESCRIPTION" : "Flat TVs and the most range of channels right at your fingertip",
   "SERVICES_WIFI" : "WiFi",
   "SERVICES_WIFI_DESCRIPTION" : "Wireless internet connection for all the devices that you carry on",
+  "ABOUT_TITLE" : "<span class='color'>Gaviotas</span>",
+  "ABOUT_SUBTITLE" : "Where to <strong>find us</strong>",
+  "ABOUT_INTRO" : "City named after the birds that visit this area at dawn and dusk all year round, <span class='color'>Las Gaviotas</span> is a small but coquettish bathing resort on the Atlantic coast, located between the towns of <span class='color'>Mar de las Pampas</span> and <span class='color'>Mar Azul</span>, only 360 kilometers from the City of <span class='color'>Buenos Aires</span>",
+  "ABOUT_ADDRESS_1" : "Pirulo Street s/n, between streets 77 and 88",
+  "ABOUT_ADDRESS_2" : "Ruta Provincial 11 km 234",
   "PHOTOS_TITLE" : "Take a look at <strong>our photo gallery</strong>",
   "PHOTOS_SUMMARY" : "In English Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
   "PHOTOS_FILTER_TITLE" : "Filter by category:",
@@ -34,6 +39,5 @@
   "CONTACT_EMAIL_PLACEHOLDER" : "Enter your email address",
   "CONTACT_MESSAGE" : "Message",
   "CONTACT_MESSAGE_PLACEHOLDER" : "Leave us a message",
-  "CONTACT_SUBMIT" : "Submit",
-  "ABOUT" : "About us"
+  "CONTACT_SUBMIT" : "Submit"
 }
