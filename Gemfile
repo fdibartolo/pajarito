@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.1'
 
 gem 'rails', '4.2.3'
-gem 'pg', '0.18.2'
+gem 'mongoid', '4.0.2'
 
 gem 'jbuilder', '2.3.1'
 gem 'sass-rails', '5.0.3'
