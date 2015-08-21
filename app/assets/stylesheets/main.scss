@@ -48,6 +48,23 @@ ul.about-list li span.fa {
   }
 }
 
+.btn.btn-map-zoom {
+  position: absolute;
+  right: 40px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  box-shadow: 4px 4px 10px #000;
+
+  i { 
+    color: #5a5a5a;
+    font-size: 140%;
+    padding-top: 3px;
+  }
+}
 // Photos Modal
 #photosModal {
   .modal-content{

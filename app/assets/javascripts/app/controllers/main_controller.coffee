@@ -24,6 +24,7 @@ angular.module('gaviotas.controllers').controller 'MainController',
     draggable: false
     visible: true
     mapTypeId: 'HYBRID'
+    # largeView: 'http://www.google.com/maps/place/-37.334962,-57.038308/@-37.334962,-57.038308,15z'
 
   $scope.init = () ->
     if $scope.photos.length is 0
