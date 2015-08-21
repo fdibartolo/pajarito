@@ -36,6 +36,18 @@ ul.about-list li span.fa {
   font-size: 150%;
 }
 
+.map-container {
+  border: 1px solid #fff;
+  margin: 0 15px;
+  box-shadow: 0 0 20px 5px gray;
+
+  #map-label {
+    background-color: transparent;
+    border: 1px solid #5a5a5a;
+    border-radius: 2px;
+  }
+}
+
 // Photos Modal
 #photosModal {
   .modal-content{

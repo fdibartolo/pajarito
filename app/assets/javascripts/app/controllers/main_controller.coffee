@@ -14,6 +14,15 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.photos = []
 
+  $scope.map = 
+    # center: '[-37.334382, -57.030277]'
+    zoom: 14
+    marker: '[-37.334962, -57.038308]'
+    title: 'Gaviotas'
+    draggable: false
+    visible: true
+    mapTypeId: 'HYBRID'
+
   $scope.getLanguage = () ->
     (language.name for language in $scope.languages when language.key is $translate.use())[0]
 
@@ -40,4 +49,7 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.setCurrentPhotoIndex = (index) ->
     $scope.currentPhotoIndex = index
+
+
+
 ]

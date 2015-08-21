@@ -3,7 +3,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <%= image_tag "map.png", class: "img-responsive" %>
+          <!-- <%= image_tag "map.png", class: "img-responsive" %> -->
+          <div map-lazy-load="http://maps.google.com/maps/api/js" class="map-container">
+            <map center="{{map.marker}}" zoom="{{map.zoom}}" map-type-id="{{map.mapTypeId}}">
+              <marker position="{{map.marker}}" title="{{map.title}}" draggable="{{map.draggable}}" visible="{{map.visible}}"></marker>
+            </map>
+          </div>
+
         </div>
         <div class="col-md-6">
           <div class="about-text">
@@ -16,7 +22,7 @@
             <p class="intro" translate="ABOUT_INTRO"></p>
             <ul class="about-list">
               <li><span class="fa fa-map-marker"></span><em>{{"ABOUT_ADDRESS_1" | translate}}</em></li>
-              <li><span class="fa fa-map"></span><em>{{"ABOUT_ADDRESS_2" | translate}}</em></li>
+              <!-- <li><span class="fa fa-map"></span><em>{{"ABOUT_ADDRESS_2" | translate}}</em></li> -->
             </ul>
           </div>
         </div>
