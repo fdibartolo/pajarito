@@ -297,7 +297,7 @@ ol.type li:after{
 	content: ' | ';
 	margin-left: 20px;
 }
-ol.type li:last-child:after { content: ''; }
+ol.type li:last-child:after { content: ''; margin-left: 0; }
 ol.type li a{ color: #222222}
 ol.type li a.active { font-weight: 700; }
 .isotope-item { z-index: 2 }
