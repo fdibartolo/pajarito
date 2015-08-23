@@ -104,3 +104,9 @@ ul.about-list li span.fa {
     background: none !important;
   }
 }
+
+// Contact
+.form-group.has-error {
+  input { border: 1px solid #a94442 !important; }
+  textarea { border: 1px solid #a94442 !important; }
+}

@@ -34,9 +34,12 @@
   "CONTACT_SUMMARY" : "In English Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
   "CONTACT_NAME" : "Name",
   "CONTACT_NAME_PLACEHOLDER" : "Enter your name",
+  "CONTACT_NAME_INVALID" : "Please enter your name",
+  "CONTACT_EMAIL_INVALID" : "Please enter a valid email address to which we can reply to your inquiry",
   "CONTACT_EMAIL" : "Email",
   "CONTACT_EMAIL_PLACEHOLDER" : "Enter your email address",
   "CONTACT_MESSAGE" : "Message",
   "CONTACT_MESSAGE_PLACEHOLDER" : "Leave us a message",
+  "CONTACT_MESSAGE_INVALID" : "Please enter your inquiry",
   "CONTACT_SUBMIT" : "Submit"
 }

@@ -27,6 +27,11 @@ angular.module('gaviotas.controllers').controller 'MainController',
     mapTypeId: 'HYBRID'
     # largeView: 'http://www.google.com/maps/place/-37.334962,-57.038308/@-37.334962,-57.038308,15z'
 
+  $scope.question =
+    name: ''
+    email: ''
+    message: ''
+
   $scope.init = () ->
     if $scope.photos.length is 0
       MainService.photos().then (photos) ->
@@ -56,4 +61,22 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.setCurrentPhotoIndex = (index) ->
     $scope.currentPhotoIndex = index
+
+  $scope.submitQuestion = () ->
+    if validForm()
+      alert 'valid'
+      clearQuestion()
+
+  validForm = () ->
+    $scope.question.invalidName    = $scope.question.name is ''
+    $scope.question.invalidEmail   = $scope.question.email is ''
+    $scope.question.invalidMessage = $scope.question.message is ''
+
+    not ($scope.question.invalidName or $scope.question.invalidEmail or $scope.question.invalidMessage)
+
+  clearQuestion = () ->
+    $scope.question =
+      name: ''
+      email: ''
+      message: ''
 ]
