@@ -15,4 +15,9 @@ class MainController < ApplicationController
     ]
     render json: { photos: photos }
   end
+
+  def testimonials
+    @testimonials = Testimonial.all
+    @language = params[:language]
+  end
 end
