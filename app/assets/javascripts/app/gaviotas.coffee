@@ -15,11 +15,11 @@ app.config ['$httpProvider', '$routeProvider', ($httpProvider, $routeProvider) -
   $routeProvider.otherwise redirectTo: '/'
 ]
 
-app.config ['$translateProvider', ($translateProvider) ->
+app.config ['$translateProvider', 'Constants', ($translateProvider, Constants) ->
   $translateProvider.useStaticFilesLoader
     prefix: '/assets/app/languages/'
     suffix: '.json'
-  $translateProvider.preferredLanguage 'es'
+  $translateProvider.preferredLanguage Constants.defaultLanguageKey
   
   # Enable escaping of HTML
   $translateProvider.useSanitizeValueStrategy 'escaped'

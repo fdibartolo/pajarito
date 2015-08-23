@@ -8,19 +8,9 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div id="testimonial" testimonial-carousel class="owl-carousel owl-theme">
-            <div class="item">
-              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-            </div>
-
-            <div class="item">
-              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-            </div>
-
-            <div class="item">
-              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+            <div class="item" ng-repeat="testimonial in testimonials">
+              <h5>{{testimonial.description}}</h5>
+              <p>{{testimonial.author}}</p>
             </div>
           </div>
         </div>

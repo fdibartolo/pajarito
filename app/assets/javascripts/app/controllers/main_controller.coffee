@@ -15,6 +15,7 @@ angular.module('gaviotas.controllers').controller 'MainController',
   ]
 
   $scope.photos = []
+  $scope.testimonials = []
 
   $scope.map = 
     # center: '[-37.334382, -57.030277]'
@@ -33,6 +34,9 @@ angular.module('gaviotas.controllers').controller 'MainController',
           photo.visible = true
           photo.visibleIndex = index
         $scope.photos = photos
+    if $scope.testimonials.length is 0
+      MainService.testimonials(Constants.defaultLanguageKey).then (testimonials) ->
+        $scope.testimonials = testimonials
 
   $scope.getLanguage = () ->
     (language.name for language in $scope.languages when language.key is $translate.use())[0]
