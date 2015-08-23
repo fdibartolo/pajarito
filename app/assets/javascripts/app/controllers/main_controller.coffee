@@ -1,5 +1,7 @@
 angular.module('gaviotas.controllers').controller 'MainController',
-['$scope', '$translate', 'MainService', ($scope, $translate, MainService) ->
+['$scope', '$translate', 'Constants', 'MainService', ($scope, $translate, Constants, MainService) ->
+
+  $scope.siteName = Constants.siteName
 
   $scope.languages = [
     {
@@ -14,11 +16,15 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.photos = []
 
-  $scope.getLanguage = () ->
-    (language.name for language in $scope.languages when language.key is $translate.use())[0]
-
-  $scope.setLanguage = (lang) ->
-    $translate.use lang
+  $scope.map = 
+    # center: '[-37.334382, -57.030277]'
+    zoom: 14
+    marker: '[-37.334962, -57.038308]'
+    title: Constants.siteName
+    draggable: false
+    visible: true
+    mapTypeId: 'HYBRID'
+    # largeView: 'http://www.google.com/maps/place/-37.334962,-57.038308/@-37.334962,-57.038308,15z'
 
   $scope.init = () ->
     if $scope.photos.length is 0
@@ -27,6 +33,12 @@ angular.module('gaviotas.controllers').controller 'MainController',
           photo.visible = true
           photo.visibleIndex = index
         $scope.photos = photos
+
+  $scope.getLanguage = () ->
+    (language.name for language in $scope.languages when language.key is $translate.use())[0]
+
+  $scope.setLanguage = (lang) ->
+    $translate.use lang
 
   $scope.setVisibility = (cat) ->
     visibleIndex = 0
