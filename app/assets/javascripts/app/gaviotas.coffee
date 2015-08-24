@@ -1,4 +1,4 @@
-app = angular.module('gaviotas', ['ngRoute', 'ngSanitize', 'pascalprecht.translate', 'ngMap', 'gaviotas.controllers', 'gaviotas.services', 'gaviotas.directives', 'gaviotas.constants'])
+app = angular.module('gaviotas', ['ngRoute', 'ngSanitize', 'pascalprecht.translate', 'ngMap', 'toaster', 'gaviotas.controllers', 'gaviotas.services', 'gaviotas.directives', 'gaviotas.constants'])
 
 controllers = angular.module('gaviotas.controllers', [])
 services = angular.module('gaviotas.services', [])

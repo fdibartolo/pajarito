@@ -1,5 +1,5 @@
 angular.module('gaviotas.controllers').controller 'MainController',
-['$scope', '$translate', 'Constants', 'MainService', ($scope, $translate, Constants, MainService) ->
+['$scope', '$translate', 'toaster', 'Constants', 'MainService', ($scope, $translate, toaster, Constants, MainService) ->
 
   $scope.siteName = Constants.siteName
 
@@ -27,11 +27,6 @@ angular.module('gaviotas.controllers').controller 'MainController',
     mapTypeId: 'HYBRID'
     # largeView: 'http://www.google.com/maps/place/-37.334962,-57.038308/@-37.334962,-57.038308,15z'
 
-  $scope.question =
-    name: ''
-    email: ''
-    message: ''
-
   $scope.init = () ->
     if $scope.photos.length is 0
       MainService.photos().then (photos) ->
@@ -42,6 +37,7 @@ angular.module('gaviotas.controllers').controller 'MainController',
     if $scope.testimonials.length is 0
       MainService.testimonials(Constants.defaultLanguageKey).then (testimonials) ->
         $scope.testimonials = testimonials
+    clearQuestion()
 
   $scope.getLanguage = () ->
     (language.name for language in $scope.languages when language.key is $translate.use())[0]
@@ -64,8 +60,9 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.submitQuestion = () ->
     if validForm()
-      alert 'valid'
-      clearQuestion()
+      $translate('CONTACT_SUBMIT_SUCCESS').then (message) ->
+        toaster.pop 'success', '', message, 10000
+        clearQuestion()
 
   validForm = () ->
     $scope.question.invalidName    = $scope.question.name is ''

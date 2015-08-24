@@ -41,5 +41,6 @@
   "CONTACT_MESSAGE" : "Mensaje",
   "CONTACT_MESSAGE_PLACEHOLDER" : "Dejanos tu mensaje",
   "CONTACT_MESSAGE_INVALID" : "Por favor ingresa tu consulta",
-  "CONTACT_SUBMIT" : "Enviar"
+  "CONTACT_SUBMIT" : "Enviar",
+  "CONTACT_SUBMIT_SUCCESS" : "Muchas gracias por su consulta. Contestaremos cuanto antes a la dirección de email que nos has indicado"
 }

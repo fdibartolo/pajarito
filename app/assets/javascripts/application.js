@@ -16,5 +16,7 @@
 //= require angular
 //= require angular-route
 //= require angular-sanitize
+//= require angular-animate
+//= require toaster
 //= require app/gaviotas
 //= require_tree .

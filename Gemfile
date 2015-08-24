@@ -13,6 +13,7 @@ gem 'angularjs-rails', '1.4.0'
 gem 'bootstrap-sass', '3.3.5'
 gem 'autoprefixer-rails', '5.2.0.1'
 gem 'font-awesome-rails', '4.4.0.0'
+gem 'ng-toaster-rails', '0.4.13.0'
 
 gem 'rails_12factor', '0.0.3', group: :production
 
