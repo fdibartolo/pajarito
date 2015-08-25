@@ -1,3 +1,3 @@
 angular.module('gaviotas.constants').constant 'Constants', 
-  siteName: 'Gaviotas Spa'
+  siteName: 'Oscarzo Spa de Mar'
   defaultLanguageKey: 'es'
