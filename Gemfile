@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.4.1'
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.8'
 gem 'mongoid', '4.0.2'
 
 gem 'jbuilder', '2.3.1'
