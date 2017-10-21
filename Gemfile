@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.1'
 
 gem 'rails', '4.2.8'
+gem 'puma', '3.10.0'
 gem 'mongoid', '4.0.2'
 
 gem 'jbuilder', '2.3.1'
