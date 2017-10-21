@@ -1,0 +1,2 @@
+web: rails server
+mongo: mongod --config /usr/local/etc/mongod.conf
