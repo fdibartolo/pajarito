@@ -103,7 +103,7 @@ production:
   # https://devcenter.heroku.com/articles/mongolab#adding-mongolab-as-a-heroku-add-on
   sessions:
     default:
-      uri: <%= ENV['MONGOLAB_URI'] %>
+      uri: <%= ENV['MONGODB_URI'] %>
       options:
         max_retries: 30
         retry_interval: 1
