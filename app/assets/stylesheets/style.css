@@ -117,7 +117,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: image-url('oscarzo.jpg');
+	background: image-url('home.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -165,7 +165,7 @@ a.fa.fa-angle-down:hover{
 }
 /* About Section */
 #tf-about{
-	background: image-url('03.jpg');
+	background: image-url('playa.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -514,3 +514,14 @@ nav#footer p{
 	border-color: #FCAC45;
 	color: #ffffff;
 }
+#footer .developer {
+	margin-top: 5px;
+	font-size: 90%;
+	color: #8c8c8c;
+}
+#footer .developer span {
+	font-size: 115%;
+	padding: 4px 5px;
+	transition: all 0.5s;
+}
+#footer .developer span.fa:hover{ color: red; }
