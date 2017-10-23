@@ -19,3 +19,7 @@ gem 'ng-toaster-rails', '0.4.13.0'
 gem 'rails_12factor', '0.0.3', group: :production
 
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :development, :test do
+  gem 'letter_opener', '1.4.1'
+end
