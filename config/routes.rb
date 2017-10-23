@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :images
+  
   get '/templates/:path.html' => 'templates#template', :constraints => { :path => /.+/ }
 
   get '/photos' => 'main#photos', defaults: { format: :json }
