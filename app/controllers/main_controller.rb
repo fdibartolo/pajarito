@@ -20,4 +20,15 @@ class MainController < ApplicationController
     @testimonials = Testimonial.all
     @language = params[:language]
   end
+
+  def contact_us
+    name, email, body = contact_us_params[:name], contact_us_params[:email], contact_us_params[:body]
+    ContactUsMailer.information_requested(name, email, body).deliver_now
+    head :no_content
+  end
+
+  private
+  def contact_us_params
+    params.require(:question).permit(:name, :email, :body)
+  end
 end

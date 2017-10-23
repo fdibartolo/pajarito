@@ -60,9 +60,14 @@ angular.module('gaviotas.controllers').controller 'MainController',
 
   $scope.submitQuestion = () ->
     if validForm()
-      $translate('CONTACT_SUBMIT_SUCCESS').then (message) ->
-        toaster.pop 'success', '', message, 10000
-        clearQuestion()
+      MainService.submitQuestion($scope.question).then (() ->
+        $translate('CONTACT_SUBMIT_SUCCESS').then (message) ->
+          toaster.pop 'success', '', message, 10000
+          clearQuestion()
+      ), () ->
+        $translate('CONTACT_SUBMIT_ERROR').then (message) ->
+          toaster.pop 'error', '', message, 10000
+          clearQuestion()
 
   validForm = () ->
     $scope.question.invalidName    = $scope.question.name is ''
