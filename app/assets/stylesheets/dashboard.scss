@@ -15,4 +15,14 @@ a.btn {
   font-style: italic;
 }
 
-.actions i { font-size: 150%; }
+.actions a { 
+  font-size: 175%;
+  color: #666;
+
+  &:hover {
+    background-color: transparent !important;
+    
+    i.fa-pencil { color: green; }
+    i.fa-trash { color: red; }
+  }
+}
