@@ -7,7 +7,9 @@
 
 a.btn {
   text-decoration: none;
-  color: white;
+
+  &.btn-primary { color: white; }
+  &.btn-default { color: black; }
 }
 
 .categories {
@@ -21,7 +23,7 @@ a.btn {
 
   &:hover {
     background-color: transparent !important;
-    
+
     i.fa-pencil { color: green; }
     i.fa-trash { color: red; }
   }
