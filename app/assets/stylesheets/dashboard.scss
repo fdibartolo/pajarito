@@ -1,1 +1,10 @@
+@import "bootstrap";
 @import "scaffolds";
+
+.not-visible { border: 2px dashed red; }
+.visible { border: 2px solid green; }
+
+a.btn {
+  text-decoration: none;
+  color: white;
+}
