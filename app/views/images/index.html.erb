@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Images</h1>
-<div class="pull-right"><%= link_to 'New Image', new_image_path, class: 'btn btn-primary' %></div>
-<br>
+<h1>
+  Listing Images
+  <div class="pull-right"><%= link_to 'New Image', new_image_path, class: 'btn btn-primary' %></div>
+</h1><br>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th></th>
@@ -26,3 +27,26 @@
     <% end %>
   </tbody>
 </table>
+ -->
+
+<div class="row">
+  <% @images.each do |image| %>
+    <div class="col-xs-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <% c = image.visible ? 'visible' : 'not-visible' %>
+          <%= image_tag(image.path, class: "img-responsive #{c}") %>
+        </div>
+        <div class="panel-footer">
+          <div class="categories">
+            <%= image.categories %>
+            <span class="pull-right actions">
+              <%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_image_path(image) %> &nbsp;
+              <%= link_to '<i class="fa fa-trash"></i>'.html_safe, image, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "scaffolds";
 
 .not-visible { border: 2px dashed red; }
@@ -8,3 +9,10 @@ a.btn {
   text-decoration: none;
   color: white;
 }
+
+.categories {
+  font-size: 90%;
+  font-style: italic;
+}
+
+.actions i { font-size: 150%; }
