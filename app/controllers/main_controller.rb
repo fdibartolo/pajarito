@@ -19,9 +19,13 @@ class MainController < ApplicationController
   end
 
   def contact_us
-    name, email, body = contact_us_params[:name], contact_us_params[:email], contact_us_params[:body]
-    ContactUsMailer.information_requested(name, email, body).deliver_now
-    head :no_content
+    if Inquiry.create(contact_us_params)
+      name, email, body = contact_us_params[:name], contact_us_params[:email], contact_us_params[:body]
+      ContactUsMailer.information_requested(name, email, body).deliver_now
+      head :no_content
+    else
+      head :bad_request
+    end
   end
 
   private
