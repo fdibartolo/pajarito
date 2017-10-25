@@ -44,6 +44,11 @@
 .owl-controls .owl-buttons div{
 	cursor: pointer;
 }
+.owl-buttons {
+	position: fixed;
+	top: 0px;
+	left: 44%;
+}
 .owl-controls {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
