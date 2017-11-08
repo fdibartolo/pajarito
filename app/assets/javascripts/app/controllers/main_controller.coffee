@@ -18,6 +18,7 @@ angular.module('gaviotas.controllers').controller 'MainController',
   $scope.testimonials = []
 
   $scope.map = 
+    url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBiKJsRDFbTPVGTB4SwsXfaVj_sXgL7Jks"
     # center: '[-37.334382, -57.030277]'
     zoom: 14
     marker: '[-37.334962, -57.038308]'

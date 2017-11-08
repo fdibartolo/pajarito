@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div map-lazy-load="http://maps.google.com/maps/api/js" class="map-container">
+          <div map-lazy-load="http://maps.google.com/maps/api/js" map-lazy-load-params="{{map.url}}" class="map-container">
             <map center="{{map.marker}}" zoom="{{map.zoom}}" map-type-id="{{map.mapTypeId}}">
               <marker position="{{map.marker}}" title="{{map.title}}" draggable="{{map.draggable}}" visible="{{map.visible}}"></marker>
             </map>
