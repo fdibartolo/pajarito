@@ -117,7 +117,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: image-url('home.jpg');
+	background: image-url('portfolio/ext07.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
